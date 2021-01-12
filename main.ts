@@ -5,10 +5,18 @@ while (true) {
         music.stopAllSounds()
     }
     
-    if (input.lightLevel() < 20) {
+    if (input.lightLevel() < 100) {
         light.showAnimation(light.rainbowAnimation, 5000)
-    } else {
-        light.setAll
+    }
+    
+    if (input.soundLevel() > 50) {
+        light.showAnimation(light.rainbowAnimation, 5000)
+        if (input.lightLevel() < 20) {
+            music.siren.play()
+            pause(3000)
+            music.stopAllSounds()
+        }
+        
     }
     
 }
