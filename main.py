@@ -1,8 +1,16 @@
 while True:
+    if input.sound_level()> 50:
+        music.wawawawaa.play()
+        
+ """if input.sound_level()> 50:
+        music.wawawawaa.play_until_done("A B C D E F G ", 150)
     if input.sound_level() > 50:
         music.siren.play()  
         pause(5000)
         music.stop_all_sounds() 
+    else: 
+        light.clear()
+    
     if input.light_level() < 100: 
         light.show_animation(light.rainbowAnimation, 5000)
     
@@ -11,7 +19,7 @@ while True:
         light.show_animation(light.rainbowAnimation, 5000)
 
         if input.light_level() < 20: 
-            music.siren.play()
+            music.siren.play_until_done()
             pause(3000)
-            music.stop_all_sounds()
-
+            music.stop_all_sounds()"""
+        
